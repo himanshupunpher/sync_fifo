@@ -1,4 +1,4 @@
-module fifo_tx (
+module sync_fifo (
     input clk,
     input rst,
     input wr_en,
