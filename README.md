@@ -223,7 +223,7 @@ endmodule
   
 ### GTKwave output
 
-![GTKWave simulation waveform](docs/waveform.png)
+![GTKWave simulation waveform](doc/waveform.png)
 
 ### What to test at the integration level
 
