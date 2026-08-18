@@ -132,6 +132,10 @@ vvp fifo_sim
 Every check prints `PASS` or `FAIL` to the console. No `FAIL` lines
 means the module is behaving correctly.
 
+### GTKwave output
+
+![GTKWave simulation waveform](doc/waveform.png)
+
 ## Using this with a UART core
 
 This FIFO was built to decouple a UART's baud-rate-paced TX/RX from
@@ -220,10 +224,6 @@ endmodule
   minimal integration above; an `rx_overrun` flag
   (`rx_done && rx_fifo_full`) can be added later if overrun detection
   becomes necessary.
-  
-### GTKwave output
-
-![GTKWave simulation waveform](doc/waveform.png)
 
 ### What to test at the integration level
 
