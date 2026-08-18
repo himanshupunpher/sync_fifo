@@ -220,6 +220,10 @@ endmodule
   minimal integration above; an `rx_overrun` flag
   (`rx_done && rx_fifo_full`) can be added later if overrun detection
   becomes necessary.
+  
+### GTKwave output
+
+![GTKWave simulation waveform](docs/waveform.png)
 
 ### What to test at the integration level
 
