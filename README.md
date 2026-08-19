@@ -133,6 +133,7 @@ Every check prints `PASS` or `FAIL` to the console. No `FAIL` lines
 means the module is behaving correctly.
 
 ### GTKwave output
+---
 
 ![GTKWave simulation waveform](doc/waveform.png)
 
@@ -157,13 +158,13 @@ module uart_top (
     input  [7:0] cpu_data_in,
     output       tx_fifo_full,
 
-    // CPU with RX interface
+    // CPU with RX
     input        cpu_rd_en,
     output [7:0] cpu_data_out,
     output       rx_fifo_empty
 );
 
-    // ---------------- TX path ----------------
+    //TX path
     wire tx_fifo_empty;
     wire [7:0] tx_byte_to_send;
     wire tx_fifo_rd_en;
@@ -189,7 +190,7 @@ module uart_top (
         // match to actual uart_tx port names
     );
 
-    // ---------------- RX path ----------------
+    // RX path
     wire [7:0] rx_data;
     wire rx_done;
     wire rx_fifo_full;
